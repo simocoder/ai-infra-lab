@@ -47,7 +47,7 @@ y is a Series with shape (150,) — the class labels
 
 ```bash
 # Clone repo and enter
-git clone https://github.com/your-user/ai-infra-lab.git
+git clone https://github.com/simocoder/ai-infra-lab.git
 cd ai-infra-lab
 
 # Build image — this runs train.py and creates model/model.pkl
