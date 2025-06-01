@@ -6,6 +6,30 @@
 
 This project trains a simple ML model, logs experiments with MLflow, and serves predictions through a FastAPI app in Docker. **The Docker image now builds the model automatically, so you don’t have to run `train.py` manually.**
 
+Uses the classic Iris flower dataset — one of the most widely used datasets in machine learning education.
+
+🔍 Specifically, the load_iris function:
+
+Returns 150 flower samples
+
+Each with 4 features:
+
+sepal length
+
+sepal width
+
+petal length
+
+petal width
+
+And a target label (0, 1, or 2) for the species:
+
+0 = setosa
+
+1 = versicolor
+
+2 = virginica
+
 ## Features
 - Train model using scikit-learn (executed during Docker build)
 - Log metrics and artifacts with MLflow
