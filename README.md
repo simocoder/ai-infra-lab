@@ -36,6 +36,7 @@ X, y = load_iris(return_X_y=True, as_frame=True)
 ```
 
 X is a DataFrame with shape (150, 4) — the features
+
 y is a Series with shape (150,) — the class labels
 
 ✅ This dataset lets you train a real model with no external data files, making it perfect for your local AI infra lab.
