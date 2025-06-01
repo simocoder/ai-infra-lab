@@ -2,10 +2,13 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import pickle
-import numpy as np
+from pathlib import Path
 
 app = FastAPI()
-model = pickle.load(open("model/model.pkl", "rb"))
+model_path = Path("model/model.pkl")
+if not model_path.exists():
+    raise RuntimeError("Model file not found. Did you run train.py or build the Docker image?")
+model = pickle.load(open(model_path, "rb"))
 
 class Features(BaseModel):
     features: list
