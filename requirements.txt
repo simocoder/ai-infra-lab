@@ -1,0 +1,7 @@
+# requirements.txt
+scikit-learn
+pandas
+mlflow
+fastapi
+uvicorn
+pydantic
