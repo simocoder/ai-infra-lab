@@ -1,7 +1,3 @@
-
-# ----------------------------
-# README.md (outline)
-
 # AI Infra Lab — Milestone 1: Local ML API with Docker + MLflow
 
 This project trains a simple ML model, logs experiments with MLflow, and serves predictions through a FastAPI app in Docker. **The Docker image now builds the model automatically, so you don’t have to run `train.py` manually.**
